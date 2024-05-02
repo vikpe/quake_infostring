@@ -5,12 +5,12 @@
 ## Usage
 
 ```rust
-let info_str = r#"\maxfps\77\pm_ktjump\1\*version\MVDSV 0.36"#;
+let info_str = r#"\maxfps\77\matchtag\kombat"#;
 let info = quake_infostring::to_hashmap(&info_str);
 
-println!("{:?}", info.maxfps);  // Some("77")
-println!("{:?}", info.version); // Some("MVDSV 0.36")
-println!("{:?}", info.admin);   // None
+assert_eq!(info.get("maxfps"), Some(&"77".to_string()));
+assert_eq!(info.get("matchtag"), Some(&"kombat".to_string()));
+assert_eq!(info.get("MISSING_KEY"), None);
 ```
 
 ## See also
