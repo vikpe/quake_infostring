@@ -15,4 +15,4 @@ assert_eq!(info.get("MISSING_KEY"), None);
 
 ## See also
 
-* [quake_serverinfo](https://github/com/vikpe/quake_serverinfo) - Parse QuakeWorld serverinfo strings
+* [quake_serverinfo](https://github.com/vikpe/quake_serverinfo) - Parse QuakeWorld serverinfo strings
