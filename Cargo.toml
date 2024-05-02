@@ -1,0 +1,20 @@
+[package]
+name = "quake_infostring"
+description = "Parse QuakeWorld info strings."
+categories = ["parsing"]
+keywords = ["quake", "quakeworld"]
+repository = "https://github.com/vikpe/quake_infostring"
+authors = ["Viktor Persson <viktor.persson@arcsin.se>"]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+include = [
+    "/Cargo.toml",
+    "/README.md",
+    "/benches/**",
+    "/src/**",
+]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dev-dependencies]
+pretty_assertions = "1.4.0"
