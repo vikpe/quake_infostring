@@ -5,8 +5,8 @@ categories = ["parsing"]
 keywords = ["quake", "quakeworld"]
 repository = "https://github.com/vikpe/quake_infostring"
 authors = ["Viktor Persson <viktor.persson@arcsin.se>"]
-version = "0.2.0"
-edition = "2021"
+version = "0.3.0"
+edition = "2024"
 license = "MIT"
 include = [
     "/Cargo.toml",
