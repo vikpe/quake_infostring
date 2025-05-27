@@ -84,7 +84,8 @@ pub fn parse_fields(input: &str) -> Vec<String> {
         match c {
             '"' => in_quote = !in_quote,
             ' ' if !in_quote => {
-                tokens.push(std::mem::take(&mut token));
+                tokens.push(token.clone());
+                token.clear();
             }
             _ => token.push(c),
         }
